@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+#menu {
+  position: absolute;
+  background: rgba(83, 92, 104, 0.3);
+  bottom: 3%;
+  right:0.5%;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 0px;
+}
+
+h3 {
+  font-size: 21px;
+  border-top: 2px blue;
+  font-family: Lato, sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+}
+
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(83, 92, 104, 0.3);
+  margin-right: 5px;
+  font-family: 'Noto Sans Display', sans-serif;
+  border: 1px solid #ccc;
+  overflow: auto;
+  border-radius: 5px;
+  padding-top: 1px;
+}
+
+
+#features {
+  top: 5%;
+  height: 200px;
+  margin-top: 10px;
+  width: 320px;
+}
+
+.popup {
+      position: absolute;
+      padding: 5px;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      z-index: 1000;
+    }
