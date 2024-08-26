@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - polar bear location web map </title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polar Bear Tracking Map</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    #bearSelect,
+    #dateRange {
+      margin-bottom: 10px;
+    }
+
+    button {
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005f8c;
+      /* 悬停时的颜色变化 */
+    }
+
+    .mapboxgl-popup-content {
+      background-color: rgba(50, 50, 50, 0.9);
+      /* 浅灰色背景 */
+      color: white;
+      border-radius: 8px;
+    }
+
+    .mapboxgl-popup-content h3,
+    .mapboxgl-popup-content p {
+      margin: 0;
+      color: white;
+      /* 弹窗文字白色 */
+    }
+
+    .mapboxgl-popup-close-button {
+      color: white;
+      /* 关闭按钮颜色 */
+    }
+
+    #annotation {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 5px;
+      font-size: 13px;
+      color: #333;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="controls">
+    <label for="bearSelect">Select Bear ID:</label>
+    <select id="bearSelect">
+      <!-- Options will be populated dynamically -->
+    </select>
+    <br>
+    <label for="dateRange">Select Date Range:</label>
+    <input type="date" id="startDate"> to <input type="date" id="endDate">
+    <button onclick="filterData()">Apply Filter</button>
+  </div>
+  <div id="map"></div>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <script src="map.js"></script>
+  <div id="annotation">Map produced by 2901802L. Data Source: <a href='https://www.usgs.gov/data/chukchi-sea-polar-bear-locations-1985-1996'>polar bear location data, 1985-1996</div>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <script src="map.js"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
